@@ -48,8 +48,8 @@ func main() {
 		inputNeurons:  4,
 		outputNeurons: 3,
 		hiddenNeurons: 3,
-		numEpochs:     7500,
-		learningRate:  0.03,
+		numEpochs:     10000,
+		learningRate:  0.01,
 	}
 
 	// Train the neural network.
