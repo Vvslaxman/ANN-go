@@ -56,35 +56,100 @@ This project implements a simple neural network using the Go programming languag
 - `main.go`: The main file containing the neural network implementation, training, and evaluation code.
 - `data/`: Directory to store training and testing CSV files.
 
-## Functions
+## Detailed Code Overview
 
-- **main()**: The main function that sets up the network configuration, trains the network, evaluates the performance, and plots the metrics.
-- **newNetwork(config neuralNetConfig) *neuralNet**: Initializes a new neural network.
-- **train(x, y *mat.Dense) ([]float64, []float64, error)**: Trains the neural network using backpropagation with L2 regularization.
-- **calculateLoss(predictions, labels *mat.Dense) float64**: Calculates the mean squared error loss.
-- **predict(x *mat.Dense) (*mat.Dense, error)**: Makes predictions using the trained network.
-- **calculateAccuracy(predictions, labels *mat.Dense) float64**: Calculates the accuracy of the predictions.
-- **calculatePrecision(predictions, labels *mat.Dense) float64**: Calculates the precision of the predictions.
-- **calculateRecall(predictions, labels *mat.Dense) float64**: Calculates the recall of the predictions.
-- **calculateF1Score(precision, recall float64) float64**: Calculates the F1-score.
-- **sigmoid(x float64) float64**: Sigmoid activation function.
-- **sigmoidPrime(x float64) float64**: Derivative of the sigmoid function.
-- **sumAlongAxis(axis int, m *mat.Dense) (*mat.Dense, error)**: Sums elements along a specified axis of a matrix.
-- **makeInputsAndLabels(fileName string) (*mat.Dense, *mat.Dense)**: Reads the CSV file and returns the inputs and labels matrices.
-- **plotMetrics(accuracy, loss []float64)**: Plots the training accuracy and loss.
+### Main Functions
 
-## License
-This project is licensed under the MIT License.
+- **main()**
+  - Sets up the network configuration.
+  - Trains the network.
+  - Evaluates the network's performance.
+  - Plots the metrics.
+  
+- **newNetwork(config neuralNetConfig) *neuralNet**
+  - Initializes a new neural network with the given configuration.
+
+- **train(x, y *mat.Dense) ([]float64, []float64, error)**
+  - Trains the neural network using backpropagation with L2 regularization.
+  - Returns the training accuracy and loss over epochs.
+
+- **calculateLoss(predictions, labels *mat.Dense) float64**
+  - Calculates the mean squared error loss.
+
+- **predict(x *mat.Dense) (*mat.Dense, error)**
+  - Makes predictions using the trained network.
+
+- **calculateAccuracy(predictions, labels *mat.Dense) float64**
+  - Calculates the accuracy of the predictions.
+
+- **calculatePrecision(predictions, labels *mat.Dense) float64**
+  - Calculates the precision of the predictions.
+
+- **calculateRecall(predictions, labels *mat.Dense) float64**
+  - Calculates the recall of the predictions.
+
+- **calculateF1Score(precision, recall float64) float64**
+  - Calculates the F1-score from precision and recall.
+
+- **sigmoid(x float64) float64**
+  - Sigmoid activation function.
+
+- **sigmoidPrime(x float64) float64**
+  - Derivative of the sigmoid function.
+
+- **sumAlongAxis(axis int, m *mat.Dense) (*mat.Dense, error)**
+  - Sums elements along a specified axis of a matrix.
+
+- **makeInputsAndLabels(fileName string) (*mat.Dense, *mat.Dense)**
+  - Reads the CSV file and returns the inputs and labels matrices.
+
+- **plotMetrics(accuracy, loss []float64)**
+  - Plots the training accuracy and loss.
 
 ## Contributing
-Feel free to submit issues, fork the repository and send pull requests. Contributions are welcome!
+Contributions are welcome! Please open an issue or submit a pull request for any improvements or new features.
+
+### Steps to Contribute:
+1. **Fork the repository:**
+
+   ```sh
+   git clone https://github.com/yourusername/neural-network-go.git
+   cd neural-network-go
+   ```
+
+2. **Create a new branch for your feature or bugfix:**
+
+   ```sh
+   git checkout -b feature-or-bugfix-name
+   ```
+
+3. **Make your changes and commit them:**
+
+   ```sh
+   git commit -am 'Add new feature or fix'
+   ```
+
+4. **Push your branch to GitHub:**
+
+   ```sh
+   git push origin feature-or-bugfix-name
+   ```
+
+5. **Create a Pull Request:**
+   - Go to the repository on GitHub.
+   - Click on the "New Pull Request" button.
+   - Provide a description of your changes and submit the PR.
+
+## License
+This project is licensed under the MIT License. See the `LICENSE` file for details.
 
 ## Acknowledgements
 - The `gonum` and `gonum/plot` packages for numerical computations and plotting in Go.
+- Inspiration and guidance from various online resources and the Go community.
 
 ## Contact
 For any questions or suggestions, please open an issue or contact the repository owner.
 
 ---
 
-This README provides an overview of the project, how to set it up, and the functionalities included in the code. Adjust the file paths and URLs as necessary to match your specific project setup.
+This README provides an overview of the project, installation instructions, usage details, a detailed code overview, contributing guidelines, and other relevant information. Adjust the file paths, URLs, and contact information as necessary to match your specific project setup.
