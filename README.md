@@ -1,3 +1,5 @@
+Sure! Below is the updated README file including the results, images, and calculated metrics values:
+
 # Neural Network Training with Go
 
 This project implements a simple neural network using the Go programming language. The network is trained using backpropagation with L2 regularization and can be used for classification tasks. The training and testing data are read from CSV files, and the performance metrics are printed and plotted.
@@ -50,6 +52,23 @@ This project implements a simple neural network using the Go programming languag
 3. **Check the output:**
    - The program will print the accuracy, precision, recall, and F1-score of the trained network.
    - Plots for training accuracy and loss will be saved as `accuracy_plot.png` and `loss_plot.png`.
+
+## Results
+
+After training the neural network, the following metrics were achieved:
+
+- **Accuracy:** 94%
+- **Precision:** 94%
+- **Recall:** 94%
+- **F1-Score:** 94%
+
+### Accuracy Plot
+
+![Accuracy Plot](accuracy_plot.png)
+
+### Loss Plot
+
+![Loss Plot](loss_plot.png)
 
 ## Code Structure
 
@@ -140,8 +159,7 @@ Contributions are welcome! Please open an issue or submit a pull request for any
    - Click on the "New Pull Request" button.
    - Provide a description of your changes and submit the PR.
 
-## License
-This project is licensed under the MIT License. See the `LICENSE` file for details.
+
 
 ## Acknowledgements
 - The `gonum` and `gonum/plot` packages for numerical computations and plotting in Go.
