@@ -1,4 +1,4 @@
-Sure! Below is the updated README file including the results, images, and calculated metrics values:
+
 
 # Neural Network Training with Go
 
@@ -170,4 +170,3 @@ For any questions or suggestions, please open an issue or contact the repository
 
 ---
 
-This README provides an overview of the project, installation instructions, usage details, a detailed code overview, contributing guidelines, and other relevant information. Adjust the file paths, URLs, and contact information as necessary to match your specific project setup.
