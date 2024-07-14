@@ -85,26 +85,26 @@ After training the neural network, the following metrics were achieved:
   - Evaluates the network's performance.
   - Plots the metrics.
   
-- **newNetwork(config neuralNetConfig) *neuralNet**
+- **newNetwork(config neuralNetConfig) *neuralNet***
   - Initializes a new neural network with the given configuration.
 
-- **train(x, y *mat.Dense) ([]float64, []float64, error)**
+- **train(x, y *mat.Dense) ([]float64, []float64, error)***
   - Trains the neural network using backpropagation with L2 regularization.
   - Returns the training accuracy and loss over epochs.
 
-- **calculateLoss(predictions, labels *mat.Dense) float64**
+- **calculateLoss(predictions, labels *mat.Dense) float64***
   - Calculates the mean squared error loss.
 
-- **predict(x *mat.Dense) (*mat.Dense, error)**
+- **predict(x *mat.Dense) (*mat.Dense, error)****
   - Makes predictions using the trained network.
 
-- **calculateAccuracy(predictions, labels *mat.Dense) float64**
+- **calculateAccuracy(predictions, labels *mat.Dense) float64***
   - Calculates the accuracy of the predictions.
 
-- **calculatePrecision(predictions, labels *mat.Dense) float64**
+- **calculatePrecision(predictions, labels *mat.Dense) float64***
   - Calculates the precision of the predictions.
 
-- **calculateRecall(predictions, labels *mat.Dense) float64**
+- **calculateRecall(predictions, labels *mat.Dense) float64***
   - Calculates the recall of the predictions.
 
 - **calculateF1Score(precision, recall float64) float64**
@@ -116,10 +116,10 @@ After training the neural network, the following metrics were achieved:
 - **sigmoidPrime(x float64) float64**
   - Derivative of the sigmoid function.
 
-- **sumAlongAxis(axis int, m *mat.Dense) (*mat.Dense, error)**
+- **sumAlongAxis(axis int, m *mat.Dense) (*mat.Dense, error)****
   - Sums elements along a specified axis of a matrix.
 
-- **makeInputsAndLabels(fileName string) (*mat.Dense, *mat.Dense)**
+- **makeInputsAndLabels(fileName string) (*mat.Dense, *mat.Dense)****
   - Reads the CSV file and returns the inputs and labels matrices.
 
 - **plotMetrics(accuracy, loss []float64)**
