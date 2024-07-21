@@ -2,7 +2,7 @@
 
 # Neural Network Training with Go
 
-This project implements a simple neural network using the Go programming language. The network is trained using backpropagation with L2 regularization and can be used for classification tasks. The training and testing data are read from CSV files, and the performance metrics are printed and plotted.
+This project implements a simple neural network using the Go programming language. The network is built with only basic mathematical operators instaed of predefines libraries and trained using backpropagation with L2 regularization and can be used for classification tasks. The training and testing data are read from CSV files, and the performance metrics are printed and plotted.
 
 ## Features
 - Neural network with one hidden layer
